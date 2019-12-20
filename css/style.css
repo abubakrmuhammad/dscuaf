@@ -1,0 +1,297 @@
+html,
+body {
+  scroll-behavior: smooth;
+  font-family: 'Source Sans Pro', sans-serif;
+  color: #333;
+  font-size: 16px;
+}
+
+header {
+  margin-top: 92px;
+}
+
+.story,
+.features,
+.services,
+footer {
+  background-color: #f1f3f4;
+}
+
+.display-4 {
+  font-size: 3rem;
+}
+
+@media (min-width: 576px) {
+  .display-4 {
+    font-size: 3.5rem;
+  }
+}
+
+.logo-text {
+  color: #555;
+  font-weight: 300;
+}
+
+.hero-image {
+  border-radius: 8px;
+}
+
+.contact-detail {
+  margin-bottom: 0.7rem;
+}
+
+.contact-detail i {
+  width: 1.5rem;
+}
+
+.w-80 {
+  width: 80%;
+}
+
+.yt-video {
+  width: 100%;
+  height: auto;
+}
+
+@media (min-width: 576px) {
+  .yt-video {
+    width: 512px;
+    height: 288px;
+  }
+}
+
+.team-member {
+  text-align: center;
+}
+
+.team-member h4 {
+  line-height: 1;
+}
+
+.team-member p {
+  color: #6c757d;
+  text-transform: uppercase;
+  font-size: 0.9rem;
+}
+
+.team-member img {
+  max-width: 100%;
+  border-radius: 100%;
+  height: 240px;
+  margin-bottom: 1.2rem;
+}
+
+.feature-icon {
+  font-size: 3rem;
+  margin-bottom: 0.5rem;
+  color: #6c757d;
+}
+
+@media (min-width: 576px) {
+  .feature-icon {
+    margin-bottom: 1rem;
+  }
+  .benefit-icon {
+    margin-bottom: 1rem;
+  }
+}
+
+.benefit-icon {
+  font-size: 2rem;
+  margin-bottom: 0.5rem;
+  border-radius: 100%;
+  color: #fff;
+  background-color: #007bff;
+  height: 4rem;
+  width: 4rem;
+  line-height: 4rem;
+  text-align: center;
+}
+
+.benefit p {
+  font-size: 1.1rem;
+}
+
+.nav-link {
+  position: relative;
+  display: inline-block;
+}
+
+@media (min-width: 768px) {
+  .nav-link {
+    padding: 0 0 0.3rem !important;
+    margin-left: 1rem;
+  }
+}
+
+.nav-link::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: 10%;
+  background-color: #007bff;
+  height: 2px;
+  width: 60%;
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: 0.2s;
+}
+
+.nav-link:hover {
+  color: #000;
+}
+
+.nav-link:hover::after {
+  transform: scaleX(1);
+}
+
+.course {
+  background-color: #fff;
+  border-radius: 8px;
+  text-align: center;
+}
+
+.course-image {
+  max-width: 100%;
+  padding: 2rem 1rem;
+}
+
+.course-desc {
+  font-size: 1rem;
+  font-weight: lighter;
+}
+
+.course-btn {
+  width: 180px;
+  border-radius: 100px;
+  /* letter-spacing: 1px;
+  text-transform: uppercase;
+  font-weight: 600; */
+}
+
+/* 
+.hover-remove:hover {
+  opacity: 0.9;
+}
+.hover-remove {
+  opacity: 0.6;
+}
+#facebook {
+  color: white;
+  cursor: pointer;
+  font-size: 27px;
+  background-color: blue;
+  border-radius: 50px;
+}
+#whatsapp {
+  color: white;
+  font-size: 27px;
+  background-color: green;
+  cursor: pointer;
+  border-radius: 50px;
+}
+
+#submit {
+  color: white;
+  border: 3px solid #dccdcd;
+  background-color: #292f36;
+}
+#name,
+#email,
+#message,
+#subject {
+  color: white;
+  border: 2px solid #dccdcd;
+  background-color: #292f36;
+  outline-color: red;
+}
+.animate-heading-first {
+  animation-delay: 1s;
+  padding: 0;
+  margin: 0;
+  color: #c36161;
+  font-size: 30px;
+  font-style: italic;
+}
+.animate-heading-second {
+  animation-delay: 1.5s;
+  padding: 0;
+  margin: 0;
+  color: #c36161;
+  font-size: 30px;
+  font-style: italic;
+}
+
+.DSC-mobile {
+  color: white;
+}
+#reg-username,
+#reg-email,
+#reg-number,
+#reg-password,
+#reg-confirm-password {
+  height: 50px;
+  border: none;
+  border-bottom: 1px solid #848080;
+  box-shadow: none;
+}
+#submit-signup {
+  height: 50px;
+  width: 90%;
+  margin-left: 15px;
+}
+#submit-login {
+  height: 50px;
+  width: 90%;
+  margin-left: 15px;
+}
+#reg-ag {
+  height: 50px;
+  border: none;
+  border-bottom: 1px solid #848080;
+  box-shadow: none;
+}
+#farooq:hover {
+  opacity: 0.9 !important;
+}
+#awais-hover:hover {
+  opacity: 0.9 !important;
+}
+#navbar-shadow {
+  box-shadow: 2px 2px 2px white;
+}
+#ali-murtaza:hover {
+  opacity: 0.9 !important;
+}
+#hamza-sidd:hover {
+  opacity: 0.9 !important;
+}
+#bilal-zahoor:hover {
+  opacity: 0.9 !important;
+}
+#navbar-shadow {
+  box-shadow: 3px 3px 3px #ccc;
+}
+@media (max-width: 768px) {
+  #mobile-none-story {
+    display: none;
+  }
+  #what-we {
+    opacity: 0.9;
+    animation: none;
+  }
+  #connect-main-con {
+    padding-top: 0;
+    margin-top: 0;
+  }
+  #team-center-mobile {
+    text-align: center;
+  }
+  #mobile-cap-open-responsive {
+    display: block;
+  }
+}
+
+#mobile-cap-open-responsive {
+  display: none;
+} */
